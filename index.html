@@ -54,7 +54,6 @@
       text-transform: uppercase;
     }
 
-    
     .btn-diagram {
       background-color: #FFFFDF;
       border: 2px solid #808080;
@@ -69,10 +68,10 @@
       letter-spacing: 0.5px;
       display: inline-block;
       margin-bottom: 10px;
-      min-width: 250px;
+      min-width: 280px;
       box-sizing: border-box;
       box-shadow: 1px 1px 0px #000;
-      cursor: pointer; /* Cambia el cursor a manita al pasar sobre el botón */
+      cursor: pointer;
       user-select: none;
     }
 
@@ -83,12 +82,15 @@
       border-bottom-color: #D4D0C8;
     }
 
-    
     .iframe-container {
       margin: 10px auto 25px auto;
       max-width: 800px;
       width: 95%;
-      display: none; 
+    }
+
+    
+    .iframe-container[hidden] {
+      display: none !important;
     }
 
     .iframe-container iframe {
@@ -97,7 +99,6 @@
       background-color: #ffffff;
     }
 
-    
     .student-label {
       font-size: 14px;
       font-weight: bold;
@@ -138,7 +139,8 @@
   <img src="logo.png" alt="UTD Logo" class="logo">
 
   <div>
-    <a href="https://supermarioplay.com" target="_blank" class="play-mario">PLAY MARIO</a>
+    
+    <a href="https://github.com/GiulioMoreno/morenojuarez_giuliomaximiliano_mario" target="_blank" class="play-mario">PLAY MARIO</a>
   </div>
 
   
@@ -146,18 +148,18 @@
 
   <div>
     <div class="btn-diagram" onclick="toggleDiagram('d1')">DIAGRAM 1 - MAIN PROCESS</div>
-    <div class="iframe-container" id="d1">
+    <div class="iframe-container" id="d1" hidden>
       <iframe frameborder="0" style="width:100%;height:1783px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=#R%3Cmxfile%3E%3Cdiagram%20id%3D%22yfWiQOQ-eddfnwOeQ-q3%22%20name%3D%22Page-1%22%3E7VzbcuI4EP0aqmZetnzl8giGZKnaSVJkZ2fnUbEVoy3ZYmU5IfP1K8my8UVhCRjHpPICUssX%2BZyjVnebZGB70faags36GwkgHlhGsB3Y84FluZMh%2FxSGF2Uw3MwQUhRkJnNnuEe%2FoDIaypqiACaVAxkhmKFN1eiTOIY%2Bq9gApeS5etgjwdW7bkAIG4Z7H%2BCm9QcK2Dqzjl1jZ%2F8donCd39k01EgE8oOVIVmDgDyXTPZiYHuUEJa1oq0HscAuxyU77%2BqV0WJiFMbskBOs7IQngFP1bMubpbe8VbNjL%2FkjU5LGARRnmQN79rxGDN5vgC9GnznH3LZmEVbD6qKQMrh9dWJm8bhcJpBEkNEXfog6oeBaScRW3ecd3uZE2dYlrIfKBhTFYXHlHQq8oYDQg%2BI0QFmI4TRJAUVEHBiHFCZAKoxSSOQ0pdwYBQkcePZgZvLhIYgEMvFDsilQKWHKyd%2BIJkcFYAwxCSmI%2BIEbSBGfNKT1sbvdwP9R8Ii2MF85bVFiWb%2B5FVJMU8PK0D0PK26DlYFnDWZXXsrnL7iAW5Qw3uajV039rkn0kCbdaNetarcQahkmUyPewk%2BcgtOwgZNHIaDiCSB9RNIRQ%2F6BJWbRJlPyq8vd6AQyp7bcLZ2yrDOt91EDsXuIoe8jEkvcEr6HENH44mEUI5%2FDxa9peCROGE3FmLJcoygGiXARogeZ%2F%2FXi17xZXfG2jpexhpdxC7yMmyteqFvMwZ55gIaSHcxXPchFTeG%2FKUoQI4nkLZSueBoLNnCJyeIqleY7rwHLqWLtWB2ugYkOa8xvMHsQeIWi9b3YAJP0AcrAifHe1d38SuIvXQvx04g%2FMLl45efyy2NUnfJdp8nGqAU28nvppb9IfBDLqOPWW12ImIddOnTTbMC3w4xHafxzyeMEjEIY%2B0g4jyll6BHxNu4fcrro4WzINROCsqpkwDXfLXEDwxA9YKgC4CfhbqcmRgGRMdhhyuwyMnNGtRB2NNbFZpoQtoD8JHjtffB%2BIzyekHsa5Ekqd3tT3iyjHRO5xXEFE19gfBjAF%2BZ47UmVoXGnnqOZ%2B5VjDhIJoARDAchiDLjllEnZzwNpyJLAPL6OCY1Atk4ALjbJfochdhX%2FiS71djT4t7LxabK8ff7nSbhwlvsfn%2FODIeut82nkz4Y2xNN5H7sNcJupYdn7AOpnzofH00G2U0bia7laLa6%2F%2FzHloYYh7mUZd4ub%2BXJx8%2BeipxJ2rDrOrtuhD2nmk4fAPL1b3c6m89sC5cWNiPBWc%2FHdS5jrkYqpLXScDeZmejj1WQow%2BiXxvYdRFo48EkoGKj9cIZiEovflL0ilJcN6GvHMBmNSGFbkH9LM3t8dYatLhK29WUjmjBey6CbCkhxZiWoCeGAtk29bRNtS5hikScq3xn46Z7seGZr2SIO1fS7nbDVzlnLKFz8hqWqA%2BVOKiALFEQwQkO0vN0SmL6CMeaZjLy9QZ90fa8CS6WbzdZAnQlhGLRuQqG9alLVDdGiIcmkR5rjJ9aTYm8tsjzRsj90WyN6bZu3ygA2IGUetKG95KQ9wUIRU9CNDSlk0dj8mU5bdCJlcRxeOanhqIxy19uZrd1RCJJkSWRkVSQFFciGBlBG1%2FzDkZ2uLwic1iCUw3EXmVPZzf69lAuZQi%2F2Zqr%2Ba13BXy5s9oHT0YrK%2BJY%2FcLrdkXX5UQwTGwVS85Oa9mMSwigDcIva3UBBfV1nvp9KTaM%2B35c6L6mR3gEHjpXgNMz4LklIfVvljgIaQlddTE9sSdK4GudxGIQYMPVWnoYNT3eGOID7BHXW5Syioq79vy%2BavTtux0riSbdWuNHRrV8qeunElyW%2Fx4IdRrsva3kR5zO9V4lx0f5bHdqzL3ktJAx1JxdZIxfqUypuloss8P5hULI1UjMGnVN4qFd3L1eOkUhZKSTevSOVw2isUv7Ipd0OxXafYsd2WKLYn56NY9073g3kDoymVrC7UG2%2FgOG15gzNKJS9gXEBY2TN6zXpUfzC9Rr20dz5nb%2BtqS114giMpHmlWtftBaK%2Bv6uKHgGeg3WqN9rft8bk3MMu%2BoPAMrXoDVyOV4adU3iwVXaGrpxtArzzBuF7qOtr%2FG%2FW0oUV2db9qODe7He8ZmmqT2asSwvFKqfmBcf11U4tCObm82P8dQ1NAMHtVlrwIoXz8oqRWKO9ahrhIoZxckuz%2F1qOpV5nvWpK0jSq%2Fw%2BODlNqF6i9VWxTKyQXJ%2FgtFU62a9MmhDOt%2B4FiH4tYF155OnJNrGb3Xybgpk1GfZFL8YdKpMrHP504c61SZ9D5A0VTJepUaX4RMTq579D7h0VTIelUguwiZfPwCikYmTp9kYtZfjxxdRj1fnc15j19ndSsT3Y%2B6PmWyVya8u%2FuHLtnhu%2F%2BKYy%2F%2BAw%3D%3D%3C%2Fdiagram%3E%3C%2Fmxfile%3E"></iframe>
 
     </div>
 
     <div class="btn-diagram" onclick="toggleDiagram('d2')">DIAGRAM 2 - CLIENTS</div>
-    <div class="iframe-container" id="d2">
+    <div class="iframe-container" id="d2" hidden>
       <iframe frameborder="0" style="width:100%;height:1293px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=#R%3Cmxfile%3E%3Cdiagram%20id%3D%22ZjcBzN-uYFMzfYh4UsvN%22%20name%3D%22Page-1%22%3E7VxLc%2BI4EP41VO0eNmVbGMORV7I5ZEINh5k5KkYBVRnLI8uE7K9fye%2BHMAQ%2FMAwHKKkt21L397VaLUEPTLf7JwqdzQtZIaunKat9D8x6mmYYGv8Wgs9AMNBBIFhTvApEaiJY4v9QKFRCqYdXyM00ZIRYDDtZoUlsG5ksI4OUko9ss3diZd%2FqwDUqCJYmtIrSH3jFNoF0qCuJ%2FF%2BE15vozaoSXtnCqHEocDdwRT5SIjDvgSklhAWl7X6KLKG7SC%2FBfY8HrsYdo8hmp9wQGmIHLS8c2%2FO35%2Bnza9g79hkNmd%2FGtcsrk48NZmjpQFNc%2BeD25bIN21q8pvJi%2BEBEGdof7JQaD5VDBJEtYvSTNwlv0AahdkJ49MPqR6JrNVLgJqXnYSiDoXnX8ZMTDfBCqAS5QkBBIT1t0NMAhx6YjG3PNjFxeQNk86%2FvSMBQU5bExBwcoihepCmT3hT0JmP3t4dWUIifCFlzVSaPyhRzuqbEs1dIdEi5iL5VcKLCBzUovF%2BqcEYhouIN4hbTwnxEvNXYV%2FTgtydoMpnvMINcMrWg53rU17cY3YtnMVGJ2p2ofU5JRxS5%2FqBlIYusKdzyhg6imI%2BOdyd3bZFcOGasd7xHkT9ryHixk2zDeLrEeHnHYa%2FGwuXymk1slNUHHyP9%2FCmA%2FqBH1V8h7v3KbJ%2BpfUa1PWap23jtV%2FREXk5uEpXonqBnaFVw7TlN894Tj5oo4w8YpGvEUogt2iOlb12i7khGkQUZ3mU7IbNB%2BIYFwbx7sbmBmjV3XI8eEXQ%2BvCvt%2BfMPyuMmj4dgyIUH%2BZCIh30SSgYNoUQ9gpLTLZ42r3ZR82oHXHGHzWuUefDvaI1dRol4M%2F8sqIfeRIEHhswL%2FPZfM7QV19W%2BCAnFzDmeQffvP8NdA6VFdz28EBHl7lppwF0bd3ddmc%2BjMj7PXRPaiFxJJAuMFtkVmVauuBmGa9tfFgCXYZMkPlAUgwXyQngmEe7OiOltxZivQ839U1dotahZrerFzvBGzYcgaS82Knox4%2B7FvubF1GJqo3mYnGduVbkN4%2BZi134%2Bdq3RuKVpmidkIwqFH%2F2OHML9XM9PBfLvJdr68aX6TmjgdkUjjNz1tcxoepvLe1WWnOkoh0CXONTXauKQrjTHIVnyJgH%2BVOtNHpfIJwlDJn%2Bvz6B3GCTVFEEf6jOH9%2BzxVPZsyPbNc9thjqFnVTksMmckgcSoDuJUTnm0Rxy9U8Qx6iJO%2FkE1Eqc04TG3d9ife8YWRy88a5K5spyGqmeZNpAwrbk5SpbUiFX7QlyWDQXymwfCqb3SldjPue2NAqBnGTIYtWklWVLhSw4xXoBl9gmS1diR1JPatBuVZJ665VqNs11rLgQ18sFNfa41enJ1mKjnwUR5UA2QhsqDooFSuIhKithVIDS8Q6gGCMnSQ7ETf32nyAxSbMg1PW4OEcfymYF%2FL6CYoJWx7fm7zaK8sKCYH16Q7frCbi4R%2B7rcSm049oigNUS6Qy29l%2FuglG%2Fnynh37nZyfS7%2FkKnufD0IIFkqp3pk8IUtqaGRwt0%2FyjnAOw9Ast3nYBK4GICAlrV7fjHcNIC4meFnqpkjGrhVIVZ6xijIdMzTB4xEunDrULF48%2FdlHDENdDPJkdNzfAbxSJKjjqNy1U%2F%2FdH4jJkJOd138qC4XP2rQxcuyYakTIiZ%2Bw0kAdotrbzWXnRoO2gzRZPmqc3iaWUPHnD3G068txM7k6UDC004d%2FLgKnpam0qbx5Dg2uWK6umGWp9qoVapVTnN1f0qUZCkC%2Bt2pdjrVoq3xI3sISyRyFCYWkejYYyTcvWbYFJIgbTEllIoDWY8%2FNpC5Y8fpKDHB8IJzIKjr0FCH50BJrAo6dbLkKoiplREzWCtOib0TrAxO8%2FXyv07p4jqxrxwwRQoJQwkSavlJVX0Znq4eO45Qc%2BdeJe6V5mn%2BhHVifo5UlTZz%2BaCpn3N1iKiySVLrElETk1dlqqo0SNXSlM6Ymhu88yPYBSWug0zW1eWi3s%2B5tzbProDKmZk6T0UciWZrnBk7tVy8EsLdQm6mML2pra4Bbz85AyTJGdCpPOh1sC2aFFJQeXz%2BVkRLi3%2BKUeCOJtnqa%2BxvMfq3%2F6OryOYZ7lx2Nz7PHbU27qgNckerCpWLm127m%2F3rZq8xy2OctXps%2Boiv1EF0K5TtIlJ4Nfk%2Fq6B58qdgYP4%2F%3C%2Fdiagram%3E%3C%2Fmxfile%3E"></iframe>
     </div>
 
     <div class="btn-diagram" onclick="toggleDiagram('d3')">DIAGRAM 3 - MONEY</div>
-    <div class="iframe-container" id="d3">
+    <div class="iframe-container" id="d3" hidden>
       <iframe frameborder="0" style="width:100%;height:1434px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=#R%3Cmxfile%3E%3Cdiagram%20id%3D%22DpKgMt7WtUq3MFGANAF3%22%20name%3D%22Page-1%22%3E7VxRc6M2EP41nmkfLoMQ2M6j4zjXzDRper6b9h4xKLY6gKiAxOmvrwQIg5AdsDHGHj9cDglkxO737a5WCwM49dZfqRWsnoiD3IGuOesBvB%2FoOtC0W%2FYf7%2FlIe8amkXYsKXayizYdc%2FwfEiOz3hg7KCxdGBHiRjgod9rE95EdlfosSsl7%2BbJX4pbvGlhLVOmY25Zb7f0LO9FKPIW26f8N4eVK3Jk9cXrGs8TFWUe4shzyXuiCswGcUkKi9MhbT5HLhSfkko572HI2nxhFflRngJ4OeLPcOHu2x%2BfH6eMf2eyiD%2FHIbBiTLmvcva9whOaBZfMz70zBrG8VeS5rAXaY%2FSCiEVpvnRTIH5VhBBEPRfSDXZIN0IeZdDJ4GFnzfSNrIAS4Ksh5nPVZmXqX%2BS9vJMAOMiGoBQIrAhnow4EOGfT4s2lTF7OnQHyEv6QotPj92D%2BX%2FwlcK7JeCfWs0qDCoSRVpv6AHzLZWK6LXLKklscuDBDFbOqIyudeNic%2BU8QrXiPBnbYUY5YVA1SaMY6kGWOXZubIRbaNiW9Rds2La%2FncvHA1zePQpjiw8WAKB3fQr6kZSmLfQfzW2kkwn4v6M9APWxCtuRP0U31w9%2FBnzOU3ueWmFgdESNfO6cDt8UNd4a6It4jDkwgW1rUmeechkh1WJDvzgsxsTFfY5obCZTe8WzDcDpf8aBLiZQnGd4nkQYhtLvZfBroBzC%2FsL2Tz037M7%2FkcUPjrySFs6JKkRx1CeLRD0CwK8TlaP5X0jEGZBhSHSAha01JJ90zUeUAhRD2sKepRC6K%2BVVgLOVrwnQmPs1jLJz4qPz97RvrxN5fVjSmaP4vn7teZINPWh2itcVQYxlo%2FC2c2g3hDjElnhpxKPCdJms2exNRGpSAgsugSRYVAqaqPgrxNhbhFH0UsMsBv5UmodJDd4YVgNr1c3RBI6oaSGtPJZ6OK4Z78Q7KXkR1z%2BsiVH0ogkT92LZSIKXcOk%2FoqL%2BoXnlS%2F%2Bhbn32f9gos3A2YVJsbVDDSESXWF2RAmmbpBUdm56tXq3kCrCKwCzg42HUWYjKowMa8waQgT1bp7P2vSTOX7wKs1azK8wqQhTHYmAV4osVnEnwT01pIvlmzCw%2FrvFv0HRXwlwO%2Bta%2FOI4gBdaIpGzp0JZXSxCAPVVdjhxh7UNPU3YDQqcv%2BLdqNp8DP681ZBY%2B26AXANF5oSfHwUP1A3pix5gSP4AGG%2Frk7gEIyoEhBSujKz%2F5OAkoXlkJ6mJsdlmZmKhNlYofs2sunCBVzw8k3gpL8WeQhaYpspe%2B%2F22Kar1vk5f55IGNEk4poxpNBkRrr2DbH7MtXwE73cbTGk%2FKnZZZQkmNb5Wqc%2BjUqZzy2i7IgywzOkTGuLWdBMwd3ZVhVQrra1MVB2LmcnNhNHYlunMTemmXGd2GyRS8KeWlZ5%2FTnschNQuZG9z%2FqzCYGOv09RIp5iBZEGOlfiNSBedV%2B%2BWEwSLzCn3T2xY48pg5NtU%2BTzHC%2Fq5o5OTb5R3W3hVsjXVvKnx%2BQbVsnXry2hsyCfKscjrd%2FncYBoWrHF9cSHu0kZzL2Hk3IjJ605si0fkd5WHuk3ZkmoY1XtETCr6MjrOw4i5OUXaggolQjZq4Qa0Npi5O3xGCmSfmpGTsmCZpsq%2F8YoYd9szVb9PXWChi6RrksnCFurith36Vdk3FH2MQVYSpwbXznXlHP6bs75EfbjhHY%2FQp7KfuZl5W5POScHnrddVi%2FD9moHuqg0OzFX9C2a6jNVdqZJ0oDxGdkoxEmSZBKikNA0WuTt39GSE%2BfhKwoj1t%2FTWLHstIAGVaHikTaD4OXnTaAib5Ka4KvXakLFnYmTp3TF5sQuGcAJu4y5MWQn20BZKU7GwfPwYgCoSHg0N6bKn1SD8CnxcLh5mUkLkl23R%2F7mgoccbJ3bi04grxTvRMgH15f039IpklSwV0kqANqydEA7oqk7OH3Sf6goatZgv9InZwEVkdbb4hUtXgyBuJmeI%2FqGbUx6apvlN%2FiAVvdlyTZss9HeGyX75U6OXwOuikJTEV8J14hw%2Bi7CvdCkEDsLlxY0qQSMI%2BKlL9JG6Yu0yQ7CN%2BSTt%2FOLmaDWJS8Pzq%2F03hEKPJUc4ahfvJQX%2BnvzEsg1vi3yspqpeXh8rqLlhB8TAfC2Jnda%2BWjF5WdWDJVP03vFHaM1nwaP6NNUqZXDw5%2B%2BvPog9jtKJvakoU813SN%2F8aM2TCqpPPk7Cy3C5OAymwN39Y8NFJUvPm2MXE1Z7b1pIgNFlws99gYKa24%2BG5Zevvn4Gpz9Dw%3D%3D%3C%2Fdiagram%3E%3C%2Fmxfile%3E"></iframe>
     </div>
   </div>
@@ -166,18 +168,18 @@
   <div class="section-title">USE CASE DIAGRAM SECTION</div>
 
   <div>
-    <div class="btn-diagram" onclick="toggleDiagram('d4')">DIAGRAM 1 - PROGRAMMER ACTOR</div>
-    <div class="iframe-container" id="d4">
+    <div class="btn-diagram" onclick="toggleDiagram('d4')">DIAGRAM 1 - CLINICA SANITARIA</div>
+    <div class="iframe-container" id="d4" hidden>
       <iframe frameborder="0" style="width:100%;height:924px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=&dark=auto#R%3Cmxfile%3E%3Cdiagram%20id%3D%22PgcjZpMQEYi1VlthHpLS%22%20name%3D%22Page-1%22%3E7VrZcqM4FP0aHjPFYrw82jiT7qruyuKemcy8TMmg2OoWEiPkJf31fQHJBkEcx8FOMuU8OLpX4gruORxtWF4Qr68ESuZfeYSp5drR2vLGlus6jt%2BFf5nnUXlsxy88M0Ei5ds6JuQn1g2Vd0EinFYaSs6pJEnVGXLGcCgrPiQEX1WbPXBa7TVBM1xzTEJE696%2FSCTnhbfv21v%2FJ0xmc92zY6uaGOnGypHOUcRXJZd3aXmB4FwWpXgdYJplT%2BeluO73J2o3NyYwk%2FtcgG7%2Fu486F%2FHX1fcR%2Bs6%2B3U97%2FkVDFOVK5aPOAdx5khUXMR2GkgvLGy2xkASy9AVNMb3hKZGEM2gy5VLyuNRgSMksq5A8Ae9cxhQMB4p8ISlhONjgZoOz6HqJ6EJ1bbldCpWjiCyhOMuKwygmjKRSQDpFRi0MPxTBT0CtwLOGYwYd64oJxIp0FEhOKVBDbO2aCtNjXprfJzwjXpeyphJ%2FhXmMpXiEJvMSNzZMWG2J5GifCtMdKFu%2FL5poSPF4tom9hRoKCu0XIO9%2BPOQngDqOUQVzlCTvGF2viq5zKnCdvdCFQCCjYIxWcyLxJEFhVrMCKa8iltPgM0tBipUHpUmB3QNZ4%2BgJ%2FCzXczJshwxR8hNlL%2BuYh4sYbokXkg2%2Fn4fwhNfBXal9pXgAFI7TAIVThcL1T4aF9%2BZYXKYhYjgH4AsJMQsJyqWREYlEVj4gyf16jvvVFPsm3btHS3HnzVP8R8rrunSUtG6ERqW132khrZ%2Bup%2F%2BGnW%2Bo13FvF9f%2F%2FOBual%2F0Pt4QAahlSOUTA81vfmKV97oGQN6xABq8Oe1LUn2HGV%2FWRP7PTG0ifmJ1N6XHbUN6GiHQHb0PDK4wwyLH4PZOy1GwiBNKYlIA0h4MdgMMtgGDIVUd%2B2gw7LWQORUMl2xJchSGFJK6mbDeEZzOTo2B6%2FsVDLzjYfCuJp2lOc%2FR34U95kK9Uw3aerqJo9rGRh0WvhAh3mNiVcaPRcNsXwUsxhmuYobXRN6Xyn9nQ%2FdvvrLGazWS58ajNhg89n3ZKK7yjD9du42SW5UwN1gQSCMWlSkDTAJmWD4%2F0akQ6TnM9XpBYIokWVZzXSLCrnWF6uGGEwBmw5WOMXh1e0aIAjZ1VXnHxwxkTES6rhGoSEwtUM67zWO%2Fgoqdw6i4C6PXMbGJU08TEwyTUE%2BR1X%2BGnXsSUUvomYktM9FvkYlOw6C2k4qaM06ZM84heqZZbb9AX%2BvU27UfeGZey8zrtjgcu%2F8zDdy5d3lmYstM7LWpgfpQ66UaaLemgRVWt6GAzvvmnbliOJR3%2FuDEvOu3yLvBobTbqtN%2BYrU%2F9doZfs%2FkOw75Bi0Ov3pp%2FTrRa2dle6biR6OiHu53b49JvJZVFjVtk6VS8B844DQ7b9HMeyCUGi6kDlhC6BGXj2b0yUtMoijreiT4gkXZplrOlAfOpPoWx208ehkTNBNoexYfoJSn2sjOwryhVfsg43UHjk37%2Fq6x7%2B8ZG86%2BOcfaY5sNzO1HOQX422%2BbvMtf%3C%2Fdiagram%3E%3C%2Fmxfile%3E"></iframe>
     </div>
 
-    <div class="btn-diagram" onclick="toggleDiagram('d5')">DIAGRAM 2 - USER ACTOR</div>
-    <div class="iframe-container" id="d5">
+    <div class="btn-diagram" onclick="toggleDiagram('d5')">DIAGRAM 2 - CONSTRUCTORA Y GESTOR</div>
+    <div class="iframe-container" id="d5" hidden>
       <iframe frameborder="0" style="width:100%;height:494px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=&dark=auto#R%3Cmxfile%3E%3Cdiagram%20id%3D%22ibU1svzoxIK1wY4sHwBK%22%20name%3D%22Page-1%22%3E3Vlbd6IwEP41PLaHi1j7aNXt7p66tqV7tn2MEDHbQGgIiv31O4EgoLa1HqmcfcHMR5jE%2BeaSAc0aBOk1R9F8zDxMNVP3Us0aaqbZtbpwlcAqB2y7lwM%2BJ14OGSXgkFesQF2hCfFwXJsoGKOCRHXQZWGIXVHDEOdsWZ82Y7S%2BaoR8vAU4LqLb6B%2FiiXmO9my9xL9j4s%2BLlQ1d3QlQMVkB8Rx5bFmBrJFmDThjIh8F6QBTabvCLvlz3964u94Yx6HY54HHcfrrrOv97E2WN8SL78bO9eTM6ORqsLdlhlKvgmKWcBe%2Fp0zNE6vCelKto8SQhfBzNRcBBcmAIU6JeISxfm4r6akmDaUT6YWwqgi3mJMAC8wLLBR89VgVKpqkWKrKpEKXcijEfSze%2BWOdNV3g5pjBynwFz3FMkSCLuuGQcjh%2FPa%2FkBAaKls9QZLeAIqNCkHEseo5Djn1Sct6mojQxRH4kh0lA%2B65gYJWrBeaCQJa5QVNMb1lMBGEhTJkyIVhQmdCnxJc3BIvqzLBEUBLiwTrvlSZbIJqope9xDPkzFFimYHmZTDlSs2AFnFb2vG3DeTWzFXlsWabBroKUlkslqlTf0ZsyunHEiDBPn7SMRpJW75RxYbY8Lq5xLBc09RvsI%2FlvRikQE7KmQsPq1GPD6jUWHOYRg8M6NDiOUy6MBsrFxUnLhdUGctqeubqnpMhqeeZySCxwgIp6TuUIRVFTicvufVFR7%2Bxjd9ADjZ%2F06%2BWcCOxEKIuQJbSedVtmBP0I5eFHISiOcqvOSIq9XZbVTHA8y5BWH4CLIlkewPMDErO4fnxaz6sNDyHA2CZgjSk16wayKB1NMWC3iQGHUeISkZHgYL4AgRUkFMX7pDQYjVXwbpt46CeeYuEevyQE0poKBpoR4x6ZCH0HEXqdiM7mUcpuiIeLVvEQQ9XIeHjg2sDS%2BkZAsq4ONRIQB%2FDQXED02kQEDCnMvaIERr6oINEm4DKZrnLsHiNKXncRmKU0VWeKJ8FM1Ycr8NYigG1vZY%2FN7aPrK93J2DpoNOVOlyd3JyeZEukJQ%2BYmAWyCZenVTyji4CPegV3oPjG7aWSjsTZUKf5f3tHo57q%2B0e1YvQ%2FanUza1Kjt1wNd7ib86D2QOxzPnkbhy2xi3P5Fz8v04a6z31tN8E1RN%2FuuSIkFZ8%2FQ01DZJBVUzQilGxBSXZErX1ZW%2B6miXQqI58mlrzhLQk%2FGVWbOGQuF%2Bmpk7uyXarlLHxLkc1S2TwNUOdz%2FhgRs9SXKQth3Ig83KAuWBkqs9XHrtXnu%2F3ysglh%2BYMruVb7SWaN%2F%3C%2Fdiagram%3E%3C%2Fmxfile%3E"></iframe>
     </div>
 
-    <div class="btn-diagram" onclick="toggleDiagram('d6')">DIAGRAM 3 - BANKER ACTOR</div>
-    <div class="iframe-container" id="d6">
+    <div class="btn-diagram" onclick="toggleDiagram('d6')">DIAGRAM 3 - RESTAURANTE Y COMENSALES</div>
+    <div class="iframe-container" id="d6" hidden>
       <iframe frameborder="0" style="width:100%;height:501px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=&dark=auto#R%3Cmxfile%3E%3Cdiagram%20id%3D%22nP49H8BaH6LhDu4i2uG0%22%20name%3D%22Page-1%22%3E3VlNc5swEP01HNMBZGznaOOkdaedpvG0SU8dBWTQREiMELGdX98VCAN2Pjtge3JxtCuxQu%2FprVbEQn6y%2FixxGn8XIWGWa4drC80s1x2iIfxqx6Z0eN64dESShqXLqR0L%2BkiM0zbenIYkaw1UQjBF07YzEJyTQLV8WEqxag9bCtaeNcUR2XMsAsz2vTc0VHHpHXt27f9CaBRXMzu26UlwNdg4shiHYtVwoQsL%2BVIIVbaStU%2BYxq7CpXzu8pne7YtJwtVbHtj8%2BIovR3%2Fnj2er%2BaODI3QT5meOCUPCPRjquMaViVwG5KVgZpzaVOjpsAtjcsHhzzRWCQPLgSZZU3ULbfuTZ6w%2FLWumN5FdGZuGcUUkTYgisvJxJTe3TaMRSZt1qMKqYpkNhWVE1AsLG2zpgm1OBMwsN%2FCcJAwr%2BtAGDpsNF23H1ZxAw9DyHorcE6DIaRDkdEVPN%2BQMj0rO81TUEIPyU93MEzYJlABUpg9EKgpZ5hu%2BI%2BxKZFRRwWHInVBKJI0BE0Yj3aFE2mZG5IpRTvxt3qshe8AsN1PPoOEja%2BoInYOL1HxNMoVzibkiZjhMRdaNl98HM26muCqhrRr50LhMlJExTc4f2H2h73UoDff42cvpJXudH1Mg7okLxId18gzrdeiFurbPKOlRGlvbaAONehMH6lAc6KOKY3TU02PwkSnqhiDvmAShE89eC5opkuDibIcfpls4TftKXoNDHeyDt%2BAOceAWqHf1KqaKLFJc6GMF99A2lgVBc57BTdJ4cJaWqC7pmoRPIWu5UFcip0QdljlkMHwaCI3zMNLtRX5HJfSBGhKaiawi4TJPaIQDWtRdiBdoufaEBSIWDK6yJhTg0ozWmq%2FR%2FB8i7X0it74qzHmbSbcvJr1TYvKaRCAYiTVtvlbgEjQY6tKYaJ6mTAT3QYwpPzAbyGuz4fQmrOEp0TFPUjhIChEtYE5RKcjHjIY4hNbP6w6ZGL%2Ba33ZV0R8Po1Pi4XeBt6Zhkit4HxoY%2BAs2ZiLIoUZWOsN1pwrnCVU4O6oYHChHnZ8UGVBc6bSk6biAm3qRnhaYU6iU6DZVXeWANz70obFDCBr3dnex30IJrE%2B1sX%2BKGkj44h4KKaYrs6oOXlLGdlzYlGKBvv41i7iqRktoGOqpp1LkPNREFkXZUnBlvlu7zuulxIziSOK6ZvNxo3b4lQkLTaydjzRFAVFdVEmXMkT7pA%2FbnHvODufn7%2BcczPozd9HX%2BF8BuvgH%3C%2Fdiagram%3E%3C%2Fmxfile%3E"></iframe>
     </div>
   </div>
@@ -192,10 +194,10 @@
   <script>
     function toggleDiagram(id) {
       const element = document.getElementById(id);
-      if (element.style.display === "block") {
-        element.style.display = "none";
+      if (element.hasAttribute('hidden')) {
+        element.removeAttribute('hidden');
       } else {
-        element.style.display = "block";
+        element.setAttribute('hidden', '');
       }
     }
   </script>
